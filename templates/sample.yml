@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  {{PROJECT_NAME}}:
+    image: your-docker-image
+    ports:
+      - "{{PORT}}:80"
