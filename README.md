@@ -76,6 +76,25 @@ services:
 
 ---
 
+## MongoDB Template
+
+Here’s an example of a MongoDB template file (`templates/mongodb.yml`):
+
+```yaml
+version: '3.8'
+
+services:
+  {{PROJECT_NAME}}:
+    image: mongo
+    ports:
+      - "{{PORT}}:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+```
+
+---
+
 ## Sample Workflow
 
 1. **Start the Script:**
@@ -87,6 +106,7 @@ services:
    ? Select a Docker template: (Use arrow keys)
      template1.yml
      template2.yml
+     mongodb.yml
    ```
 3. **Enter Project Details:**
    ```
