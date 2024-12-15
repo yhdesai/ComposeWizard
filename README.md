@@ -1,33 +1,31 @@
-# ComposeWizard
+ComposeWizard
 
-ComposeWizard is a CLI tool designed to make Docker Compose file creation fun and effortless. With an intuitive interface, you can select from predefined templates, customize details like project name and port, and generate a `docker-compose.yml` file in a matter of seconds. Say goodbye to manual YAML editing and let ComposeWizard handle it for you!
+ComposeWizard is a CLI tool designed to make Docker Compose file creation fun and effortless. With an intuitive interface, you can select from predefined templates, customize details like project name and port, and generate a docker-compose.yml file in a matter of seconds. Say goodbye to manual YAML editing and let ComposeWizard handle it for you!
 
----
+Features
 
-## Features
+Template-Based: Choose from a variety of pre-configured Docker Compose templates.
 
-- **Template-Based**: Choose from a variety of pre-configured Docker Compose templates.
-- **Interactive CLI**: Simple prompts to gather project details.
-- **Dynamic Generation**: Automatically replaces placeholders in templates with user-provided values.
-- **Organized Output**: Creates a new project folder with your custom `docker-compose.yml`.
+Interactive CLI: Simple prompts to gather project details.
 
----
+Dynamic Generation: Automatically replaces placeholders in templates with user-provided values.
 
-## Installation
+Organized Output: Creates a new project folder with your custom docker-compose.yml.
+
+
+Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yhdesai/ComposeWizard.git
-   cd ComposeWizard
+
+git clone https://github.com/yhdesai/ComposeWizard.git
+cd ComposeWizard
+
 
 2. Install dependencies:
 
 npm install
 
 
-
-
----
 
 Usage
 
@@ -64,9 +62,6 @@ Enter the port number.
 
 
 
-
----
-
 Example
 
 Input:
@@ -90,15 +85,9 @@ services:
     ports:
       - "8080:80"
 
-
----
-
 Contributing
 
 Contributions are welcome! If you have ideas for new features or improvements, feel free to open an issue or submit a pull request.
-
-
----
 
 License
 
