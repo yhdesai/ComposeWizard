@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  {{PROJECT_NAME}}:
+    image: portainer/portainer-ce
+    ports:
+      - "{{PORT}}:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+
+volumes:
+  portainer_data:

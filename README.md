@@ -104,9 +104,9 @@ services:
 2. **Select a Template:**
    ```
    ? Select a Docker template: (Use arrow keys)
-     template1.yml
-     template2.yml
-     mongodb.yml
+     portainer.yml
+     netdata.yml
+     pihole.yml
    ```
 3. **Enter Project Details:**
    ```
