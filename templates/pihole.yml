@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  {{PROJECT_NAME}}:
+    image: pihole/pihole
+    ports:
+      - "{{PORT}}:80"
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+    environment:
+      TZ: 'America/Los_Angeles'
+      WEBPASSWORD: 'your_password'
+    volumes:
+      - pihole_data:/etc/pihole
+      - dnsmasq_data:/etc/dnsmasq.d
+    restart: unless-stopped
+
+volumes:
+  pihole_data:
+  dnsmasq_data:
