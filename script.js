@@ -50,8 +50,11 @@ const path = require("path");
       .replace(/{{PROJECT_NAME}}/g, projectName)
       .replace(/{{PORT}}/g, port);
 
-    // Create a new folder for the project
-    const projectDir = path.join(__dirname, projectName);
+    // Define the new folder structure
+    const baseDir = path.join(process.env.HOME || "~", "docker-compose");
+    const projectDir = path.join(baseDir, projectName);
+
+    // Create the required directory
     await fs.ensureDir(projectDir);
 
     // Write the updated content to docker-compose.yml
